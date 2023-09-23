@@ -1,13 +1,12 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import HotDeals from "./components/HotDeals";
+import AppLayout from "./AppLayout.jsx";
+
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import HomePage from "./pages/HomePage.jsx";
+
+const router = createBrowserRouter([
+  { element: <AppLayout />, children: [{ path: "/", element: <HomePage /> }] },
+]);
 
 export default function App() {
-  return (
-    <>
-      <Header />
-      <Hero />
-      <HotDeals />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
