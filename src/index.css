@@ -16,3 +16,7 @@ button {
 input {
   outline: none;
 }
+
+a {
+  color: inherit;
+}

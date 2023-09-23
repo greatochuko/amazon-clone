@@ -1,0 +1,49 @@
+.hotDeals {
+  background-color: #ffbe5c34;
+  padding: 1rem 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  height: 20vh;
+  display: flex;
+  gap: 1rem;
+}
+
+.hotDeal {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.hotDeal:hover {
+  transform: scale(1.1);
+}
+
+.hotDeal img {
+  width: 80px;
+  /* border-radius: 50%; */
+  border-radius: 10px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hotDeal .text {
+  height: 100%;
+}
+
+.hotDeal h2 {
+  flex: 5;
+  font-size: 0.95rem;
+  color: #222;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.hotDeal .text p {
+  font-size: 0.8rem;
+  color: #444;
+  margin-top: 5px;
+}
