@@ -3,7 +3,7 @@
   align-items: center;
   padding: 1rem;
   gap: 1rem;
-  box-shadow: 0 0 2px 2px #eee;
+  /* box-shadow: 0 0 2px 2px #eee; */
 }
 
 .logo {
@@ -29,12 +29,16 @@
 
 .header form input {
   padding: 12px;
-  transition: flex 0.3s;
+  transition: all 0.3s;
   border-radius: 10px;
-  border: solid #ddd 1px;
+  border: solid #eee 1px;
   background-color: rgb(245, 245, 245);
   width: 9rem;
   cursor: pointer;
+}
+
+.header form input:hover {
+  background-color: #eee;
 }
 
 .header form input:focus {
