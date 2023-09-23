@@ -1,7 +1,7 @@
 .hero {
   background-color: #fafafa;
   height: 60vh;
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   position: relative;
@@ -82,7 +82,7 @@
 .product img {
   position: absolute;
   width: 50%;
-  right: 10%;
+  right: 0;
   top: 50%;
   transform: translateY(-70%);
 }
@@ -93,7 +93,7 @@
   /* height: 50%; */
   margin-top: auto;
   border-radius: 10px;
-  /* box-shadow: 2px 2px 2px 2px #dedede; */
+  box-shadow: 2px 2px 2px 0px #efefef;
   padding: 1rem;
   display: flex;
   flex-direction: column;
