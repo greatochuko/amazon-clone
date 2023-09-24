@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.header h2 {
+  font-size: 1rem;
+  color: #222;
+}
+
+.header a {
+  color: #444;
+  font-size: 0.9rem;
+  transition: color 0.15s;
+}
+
+.header a:hover {
+  color: #146eb4;
+}

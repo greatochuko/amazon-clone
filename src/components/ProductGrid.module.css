@@ -1,0 +1,14 @@
+.productGrid {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 400px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}

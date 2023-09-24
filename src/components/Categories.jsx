@@ -1,12 +1,10 @@
 import styles from "./Categories.module.css";
+import SectionHeader from "./SectionHeader";
 
 export default function Categories() {
   return (
     <section className={styles.categories}>
-      <div className={styles.header}>
-        <h2>Shop By Categories</h2>
-        <a href="#">See all Categories &rarr;</a>
-      </div>
+      <SectionHeader title="Shop By Categories" link="See all Categories" />
       <div className={styles.categoriesContianer}>
         <div className={styles.category}>
           <img

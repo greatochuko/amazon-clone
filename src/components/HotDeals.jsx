@@ -1,4 +1,4 @@
-import styles from "./hotDeal.module.css";
+import styles from "./hotDeals.module.css";
 
 export default function QuickAccess() {
   return (
