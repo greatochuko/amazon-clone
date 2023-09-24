@@ -9,6 +9,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  padding-bottom: 100vh;
+}
+
 button {
   cursor: pointer;
 }
