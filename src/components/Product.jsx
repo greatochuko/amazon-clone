@@ -1,4 +1,5 @@
 import styles from "./Product.module.css";
+import Rating from "./Rating";
 
 export default function Product() {
   return (
@@ -13,7 +14,7 @@ export default function Product() {
         <h4 className={styles.productName}>
           Gaming Chair High Black Racing Computer Chair PU
         </h4>
-        <p className={styles.rating}>No rating</p>
+        <Rating rating={5} />
         <p className={styles.price}>
           $129<span>99</span>
         </p>

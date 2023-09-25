@@ -1,0 +1,20 @@
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+}
+
+.stars img {
+  width: 15px;
+  height: 15px;
+}
+
+.reviews {
+  font-size: 0.9rem;
+  color: #999;
+  font-weight: bold;
+}
