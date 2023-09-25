@@ -1,0 +1,57 @@
+.deal {
+  flex: 1 0 230px;
+  border: solid 1px #eee;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  /* box-shadow: 0 0 2px 2px gray; */
+}
+
+.deal img {
+  width: 100%;
+  aspect-ratio: 1.3;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.dealProductDetails {
+  background-color: #fff;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.discount {
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: rgb(228, 54, 54);
+  color: #fff;
+  width: fit-content;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+
+.price {
+  color: #333;
+  font-weight: 500;
+  display: flex;
+}
+
+.price span.kobo {
+  font-size: 0.8rem;
+  margin-right: 2rem;
+}
+
+.price span.originalPrice {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 0.9rem;
+  align-self: flex-end;
+}
+
+.dealProductName {
+  font-size: 0.9rem;
+  color: #333;
+}

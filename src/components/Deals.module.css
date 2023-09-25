@@ -1,0 +1,66 @@
+.deals {
+  width: 90%;
+  margin: auto;
+  background-color: #fafafa;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.header h2 {
+  font-size: 1rem;
+}
+
+.header a {
+  font-size: 0.9rem;
+  transition: color 0.15s;
+  /* font-weight: bold; */
+  color: hsl(206, 28%, 55%);
+}
+
+.header a:hover {
+  color: #146eb4;
+}
+
+.dealsContainer {
+  display: flex;
+  overflow-x: hidden;
+  gap: 1rem;
+  position: relative;
+}
+
+.deals button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-color: white;
+  box-shadow: 0 0 5px 1px gray;
+  border: none;
+  opacity: 0.5;
+  width: 40px;
+  padding: 20px 0;
+  transition: opacity 0.3s;
+  border-radius: 0 5px 5px 0;
+}
+
+.deals button.right {
+  right: 0;
+  left: auto;
+  border-radius: 5px 0 0 5px;
+}
+
+.deals button:hover {
+  opacity: 1;
+}
+
+.deals button img {
+  width: 100%;
+}
