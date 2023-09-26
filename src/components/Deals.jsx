@@ -63,7 +63,6 @@ const deals = [
 export default function Deals() {
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const maxScrollPercentage = (deals.length - 1) * 18 * -1;
-  console.log(scrollPercentage, maxScrollPercentage);
 
   function scrollRight(e) {
     e.preventDefault();
