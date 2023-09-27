@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import styles from "./NewsLetter.module.css";
 
 export default function NewsLetter() {
