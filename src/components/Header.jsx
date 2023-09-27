@@ -1,9 +1,20 @@
+import { Link, useNavigate } from "react-router-dom";
 import { header, logo, imageLink } from "./Header.module.css";
+import { useState } from "react";
 
 export default function Header() {
+  const [query, setQuery] = useState("");
+  const navigate = useNavigate();
+  function handleSearch(e) {
+    e.preventDefault();
+    navigate(`/search/?q=${query}&a=er`);
+  }
+
   return (
     <div className={header}>
-      <img className={logo} src="/amazon-logo.png" alt="Amazon logo" />
+      <Link to="/">
+        <img className={logo} src="/amazon-logo.png" alt="Amazon logo" />
+      </Link>
       <ul>
         <li>
           <a href="#">All</a>
@@ -24,14 +35,19 @@ export default function Header() {
           <a href="#">Sell</a>
         </li>
       </ul>
-      <form>
-        <input type="text" placeholder="Search Amazon" />
+      <form onSubmit={handleSearch}>
+        <input
+          type="text"
+          placeholder="Search Amazon"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
         <button type="submit">
-          <img src="search-icon.png " alt="search icon" />
+          <img src="/search-icon.png " alt="search icon" />
         </button>
       </form>
-      <img className={imageLink} src="user-icon.png" alt="user icon" />
-      <img className={imageLink} src="cart-icon.png" alt="cart icon" />
+      <img className={imageLink} src="/user-icon.png" alt="user icon" />
+      <img className={imageLink} src="/cart-icon.png" alt="cart icon" />
     </div>
   );
 }

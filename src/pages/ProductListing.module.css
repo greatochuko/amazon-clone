@@ -1,0 +1,11 @@
+.productListing {
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.search {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  gap: 2rem;
+}

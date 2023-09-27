@@ -6,7 +6,7 @@ export default function Deal({ deal }) {
   );
   return (
     <a href="#" className={styles.deal}>
-      <img src="gaming-monitor.png" alt="gaming monitor" />
+      <img src="/gaming-monitor.png" alt="gaming monitor" />
       <div className={styles.dealProductDetails}>
         <h4 className={styles.discount}>{deal.discount}% off</h4>
         <h3 className={styles.price}>

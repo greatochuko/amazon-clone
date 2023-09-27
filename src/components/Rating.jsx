@@ -6,7 +6,7 @@ export default function Rating({ rating }) {
     <div className={styles.rating}>
       <div className={styles.stars}>
         {numberArray.map((a, index) => (
-          <img src="star.png" alt="star" key={index} />
+          <img src="/star.png" alt="star" key={index} />
         ))}
       </div>
       <div className={styles.reviews}>1254 Reviews</div>

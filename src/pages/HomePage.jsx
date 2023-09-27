@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import HotDeals from "../components/HotDeals";
 import NewsLetter from "../components/NewsLetter";
 import ProductGrid from "../components/ProductGrid";
+import SectionHeader from "../components/SectionHeader";
 
 export default function HomePage() {
   return (
@@ -11,7 +12,9 @@ export default function HomePage() {
       <Hero />
       <HotDeals />
       <Categories />
-      <ProductGrid title="Last Viewed" link="See More" />
+      <ProductGrid title="Recently Viewed" link="See More" number={5}>
+        <SectionHeader title="Recently Viewed" link="See More" />
+      </ProductGrid>
       <Deals />
       <NewsLetter />
     </main>

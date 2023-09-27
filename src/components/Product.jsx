@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import styles from "./Product.module.css";
 import Rating from "./Rating";
 
 export default function Product() {
   return (
-    <div className={styles.product}>
+    <Link to="#" className={styles.product}>
       <img
-        src="gaming-chair.png"
+        src="/gaming-chair.png"
         alt="gaming chair"
         className={styles.productImage}
       />
@@ -19,6 +20,6 @@ export default function Product() {
           $129<span>99</span>
         </p>
       </div>
-    </div>
+    </Link>
   );
 }

@@ -76,7 +76,7 @@ export default function Deals() {
   return (
     <div className={styles.deals}>
       <button className="left" onClick={scrollLeft}>
-        <img src="arrow-left.png" alt="arrow left" />
+        <img src="/arrow-left.png" alt="arrow left" />
       </button>
       <div className={styles.header}>
         <h2>Deals on electronics, gadgets & accessories</h2>
@@ -93,7 +93,7 @@ export default function Deals() {
         </div>
       </div>
       <button className={styles.right} onClick={scrollRight}>
-        <img src="arrow-right.png" alt="arrow left" />
+        <img src="/arrow-right.png" alt="arrow left" />
       </button>
     </div>
   );

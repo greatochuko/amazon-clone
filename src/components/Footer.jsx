@@ -105,7 +105,7 @@ export default function Footer() {
       </div>
       <div className={styles.copyright}>
         <a href="#">
-          <img src="amazon-logo.png" alt="logo" />
+          <img src="/amazon-logo.png" alt="logo" />
         </a>
         <p>&copy; {new Date().getFullYear()} amazon inc</p>
       </div>
