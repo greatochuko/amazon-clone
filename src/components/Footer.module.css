@@ -1,6 +1,6 @@
 .footer {
   background-color: #f6faff;
-  color: #333;
+  color: #444;
   margin-top: 2rem;
 }
 
@@ -15,6 +15,7 @@
 .footer .title {
   font-size: 1rem;
   margin-bottom: 8px;
+  color: #333;
 }
 
 .linkGroup ul {
@@ -25,6 +26,15 @@
 
 .linkGroup ul li {
   font-size: 0.9rem;
+}
+
+.linkGroup ul li a {
+  transition: text-decoration 0.3s;
+  font-weight: 500;
+}
+
+.linkGroup ul li a:hover {
+  text-decoration: underline;
 }
 
 .copyright {
