@@ -1,0 +1,11 @@
+.productDetails {
+  display: flex;
+}
+
+.productImages {
+  flex: 1;
+}
+
+.productDetailsText {
+  flex: 1;
+}

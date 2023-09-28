@@ -7,7 +7,7 @@ export default function Header() {
   const navigate = useNavigate();
   function handleSearch(e) {
     e.preventDefault();
-    navigate(`/search/?q=${query}&a=er`);
+    navigate(`/search/?q=${query}`);
   }
 
   return (

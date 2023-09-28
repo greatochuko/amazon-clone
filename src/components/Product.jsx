@@ -4,7 +4,7 @@ import Rating from "./Rating";
 
 export default function Product() {
   return (
-    <Link to="#" className={styles.product}>
+    <Link to="/product/chair" className={styles.product}>
       <img
         src="/gaming-chair.png"
         alt="gaming chair"
