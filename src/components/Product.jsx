@@ -15,7 +15,7 @@ export default function Product() {
         <h4 className={styles.productName}>
           Gaming Chair High Black Racing Computer Chair PU
         </h4>
-        <Rating rating={5} />
+        <Rating rating={5} reviews={1254} />
         <p className={styles.price}>
           $129<span>99</span>
         </p>

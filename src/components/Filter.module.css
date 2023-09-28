@@ -1,3 +1,33 @@
 .filter {
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filterSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.filterOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.filterOptions label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filterOptions input {
+  accent-color: #be7200;
 }
