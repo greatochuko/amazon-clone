@@ -1,11 +1,154 @@
-.productDetails {
+.productDetailsContainer {
   display: flex;
+  width: 90%;
+  margin: auto;
+  height: 80vh;
+  gap: 3rem;
 }
 
 .productImages {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.productImages img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 10px;
+  background-color: #f6f6f6;
+}
+
+.mainImage {
+  height: 75%;
+}
+
+.imageNav {
+  max-height: 20%;
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 100%;
+  gap: 1rem;
 }
 
 .productDetailsText {
   flex: 1;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.productDetailsText nav ul {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.productDetailsText nav ul li {
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: 0.15s;
+  color: gray;
+  border-bottom: solid 2px transparent;
+  font-size: 1rem;
+}
+
+.productDetailsText nav ul li.active {
+  color: inherit;
+  font-weight: 600;
+  border-bottom: solid 2px #ff9900;
+}
+
+.productName {
+  font-size: 1.3rem;
+  max-width: 80%;
+}
+
+h4.header {
+  font-size: 1rem;
+  width: 100%;
+}
+
+.colors {
+  display: flex;
+  gap: 8px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.color {
+  border: solid 1px #ccc;
+  height: 24px;
+  width: 24px;
+  color: #5b7d81;
+  transition: transform 0.15s;
+}
+
+.spec button:active {
+  transform: scale(1.2);
+}
+
+.size {
+  display: flex;
+  gap: 8px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.size button {
+  min-width: 24px;
+  border: solid 1px #ccc;
+  background-color: #fff;
+  padding: 1px 3px;
+  transition: transform 0.15s;
+}
+
+.actions {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.addToCartBtn {
+  text-transform: uppercase;
+  background-color: #333;
+  padding: 8px 1rem;
+  color: #fff;
+  border: none;
+}
+
+.quantity {
+  display: flex;
+}
+
+.quantity button {
+  display: flex;
+  padding: 5px 10px;
+  background-color: #fafafa;
+  align-items: center;
+  border: solid 1px #ddd;
+}
+
+.quantity button:disabled {
+  cursor: not-allowed;
+}
+
+.quantity input {
+  border: solid 1px #ddd;
+  width: 2.5rem;
+  text-align: center;
+}
+
+.likeBtn {
+  border: solid 1px #ddd;
+  background-color: #fafafa;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.likeBtn img {
+  height: 16px;
 }
