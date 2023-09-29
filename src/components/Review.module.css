@@ -1,0 +1,40 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-bottom: solid 1px #ccc;
+  padding-bottom: 1rem;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.user img {
+  width: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.user h4 {
+  color: #333;
+  font-weight: normal;
+}
+
+.heading {
+  display: flex;
+  gap: 1rem;
+}
+
+.heading p {
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.reviewDetail {
+  font-size: 0.9rem;
+  color: #333;
+}

@@ -1,11 +1,6 @@
 import styles from "./Rating.module.css";
 
-export default function Rating({
-  rating = 5,
-  maxRating = rating,
-  reviews,
-  style,
-}) {
+export default function Rating({ rating = 5, maxRating = 5, reviews, style }) {
   let numberArray = Array.from(Array(maxRating).keys());
   return (
     <div className={styles.rating} style={style}>

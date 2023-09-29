@@ -1,0 +1,43 @@
+.productName {
+  font-size: 1.3rem;
+  max-width: 80%;
+}
+
+h4.header {
+  font-size: 1rem;
+  width: 100%;
+}
+
+.colors {
+  display: flex;
+  gap: 8px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.color {
+  border: solid 1px #ccc;
+  height: 24px;
+  width: 24px;
+  color: #5b7d81;
+  transition: transform 0.15s;
+}
+
+.spec button:active {
+  transform: scale(1.2);
+}
+
+.size {
+  display: flex;
+  gap: 8px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.size button {
+  min-width: 24px;
+  border: solid 1px #ccc;
+  background-color: #fff;
+  padding: 1px 3px;
+  transition: transform 0.15s;
+}

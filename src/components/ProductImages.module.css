@@ -1,0 +1,26 @@
+.productImages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.productImages img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 10px;
+  background-color: #f6f6f6;
+}
+
+.mainImage {
+  height: 75%;
+}
+
+.imageNav {
+  max-height: 20%;
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 100%;
+  gap: 1rem;
+}

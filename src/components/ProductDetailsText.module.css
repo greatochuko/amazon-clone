@@ -1,0 +1,79 @@
+.productDetailsText {
+  flex: 1;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.productDetailsText nav ul {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.productDetailsText nav ul li {
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: 0.15s;
+  color: #999;
+  border-bottom: solid 2px transparent;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.productDetailsText nav ul li.active {
+  color: inherit;
+  border-bottom: solid 2px #ff9900;
+}
+
+.actions {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.addToCartBtn {
+  text-transform: uppercase;
+  background-color: #333;
+  padding: 8px 1rem;
+  color: #fff;
+  border: none;
+}
+
+.addToCartBtn:active {
+  background-color: #222;
+}
+
+.quantity {
+  display: flex;
+}
+
+.quantity button {
+  display: flex;
+  padding: 5px 10px;
+  background-color: #fafafa;
+  align-items: center;
+  border: solid 1px #ddd;
+}
+
+.quantity button:disabled {
+  cursor: not-allowed;
+}
+
+.quantity input {
+  border: solid 1px #ddd;
+  width: 2.5rem;
+  text-align: center;
+}
+
+.likeBtn {
+  border: solid 1px #ddd;
+  background-color: #fafafa;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.likeBtn img {
+  height: 16px;
+}
