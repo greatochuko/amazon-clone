@@ -24,19 +24,19 @@ export default function ProductDetailsText() {
       <nav>
         <ul>
           <li
-            className={activeTab === "info" && styles.active}
+            className={activeTab === "info" ? styles.active : ""}
             onClick={() => setActiveTab("info")}
           >
             Product Information
           </li>
           <li
-            className={activeTab === "reviews" && styles.active}
+            className={activeTab === "reviews" ? styles.active : ""}
             onClick={() => setActiveTab("reviews")}
           >
             Reviews
           </li>
           <li
-            className={activeTab === "faq" && styles.active}
+            className={activeTab === "faq" ? styles.active : ""}
             onClick={() => setActiveTab("faq")}
           >
             FAQ

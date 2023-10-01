@@ -12,7 +12,7 @@ export default function HomePage() {
       <Hero />
       <HotDeals />
       <Categories />
-      <ProductGrid title="Recently Viewed" link="See More" number={5}>
+      <ProductGrid title="Recently Viewed" link="See More">
         <SectionHeader title="Recently Viewed" link="See More" />
       </ProductGrid>
       <Deals />

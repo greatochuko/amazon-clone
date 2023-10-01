@@ -2,15 +2,13 @@
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.3s;
+  transition: 0.3s;
   border: solid 1px #eee;
+  position: relative;
 }
 
 .product:hover {
   box-shadow: 0 0 10px 1px #eee;
-}
-
-.product:hover .productImage {
   transform: scale(1.1);
 }
 
@@ -52,4 +50,47 @@
 .price span {
   font-size: 0.9rem;
   font-weight: normal;
+}
+
+.likeBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  transition: transform 0.15s;
+  display: none;
+}
+
+.likeBtn img {
+  height: 100%;
+  width: 100%;
+}
+
+.likeBtn:hover {
+  transform: scale(1.2);
+}
+
+.addToCartBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 6px 10px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  display: none;
+  background-color: #ff9900;
+}
+
+.addToCartBtn:hover {
+  background-color: hsl(36, 100%, 47%);
+}
+
+.product:hover :is(.addToCartBtn, .likeBtn) {
+  display: block;
 }

@@ -4,13 +4,15 @@
   width: 90%;
   margin: auto;
   margin-top: 2rem;
-  height: 20vh;
+  height: min(100px, 20vh);
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
 .hotDeal {
   flex: 1;
+  height: 100%;
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -22,7 +24,8 @@
 }
 
 .hotDeal img {
-  width: 80px;
+  /* width: 80px; */
+  height: 100%;
   /* border-radius: 50%; */
   border-radius: 10px;
   aspect-ratio: 1;
