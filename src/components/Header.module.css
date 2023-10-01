@@ -1,9 +1,14 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 10px 1rem;
   gap: 1rem;
-  /* box-shadow: 0 0 2px 2px #eee; */
+  box-shadow: 0 0 2px 2px #eee;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -81,4 +86,23 @@
 
 .imageLink {
   height: 30px;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart p {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #fff;
+  color: #ff9900;
+  /* border: solid 1px gray; */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

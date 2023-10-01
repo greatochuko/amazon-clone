@@ -5,6 +5,9 @@ import HomePage from "./pages/HomePage.jsx";
 import ProductListing from "./pages/ProductListing.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
 
+import { Provider } from "react-redux";
+import { store } from "./redux/store/store.jsx";
+
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
@@ -17,5 +20,9 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
+  );
 }

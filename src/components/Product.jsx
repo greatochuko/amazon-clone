@@ -3,12 +3,32 @@ import styles from "./Product.module.css";
 import Rating from "./Rating";
 import { useState } from "react";
 
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, removeFromCart } from "../redux/slice/cartSlice";
+
 export default function Product({ product }) {
   const [isLiked, setIsLiked] = useState(false);
   function handleLike(e) {
     e.preventDefault();
     setIsLiked((curr) => !curr);
   }
+
+  const cart = useSelector((state) => state.cart);
+  // const cart = []
+
+  const dispatch = useDispatch();
+
+  function handleAddToCart(e) {
+    e.preventDefault();
+    dispatch(addToCart(product._id));
+  }
+
+  function handleRemoveFromCart(e) {
+    e.preventDefault();
+    dispatch(removeFromCart(product._id));
+    console.log("removing");
+  }
+
   return (
     <Link to={`/product/${product._id}`} className={styles.product}>
       <img
@@ -30,7 +50,14 @@ export default function Product({ product }) {
           alt="like"
         />
       </button>
-      <button className={styles.addToCartBtn}>Add to cart</button>
+      <button
+        className={styles.addToCartBtn}
+        onClick={
+          cart.includes(product._id) ? handleRemoveFromCart : handleAddToCart
+        }
+      >
+        {cart.includes(product._id) ? "Remove from cart" : "Add to cart"}
+      </button>
     </Link>
   );
 }

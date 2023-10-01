@@ -1,8 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
-import { header, logo, imageLink } from "./Header.module.css";
+import styles from "./Header.module.css";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 export default function Header() {
+  const cart = useSelector((state) => state.cart);
+
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
   function handleSearch(e) {
@@ -11,9 +14,9 @@ export default function Header() {
   }
 
   return (
-    <div className={header}>
+    <div className={styles.header}>
       <Link to="/">
-        <img className={logo} src="/amazon-logo.png" alt="Amazon logo" />
+        <img className={styles.logo} src="/amazon-logo.png" alt="Amazon logo" />
       </Link>
       <ul>
         <li>
@@ -46,8 +49,15 @@ export default function Header() {
           <img src="/search-icon.png " alt="search icon" />
         </button>
       </form>
-      <img className={imageLink} src="/user-icon.png" alt="user icon" />
-      <img className={imageLink} src="/cart-icon.png" alt="cart icon" />
+      <img className={styles.imageLink} src="/user-icon.png" alt="user icon" />
+      <Link to="/cart" className={styles.cart}>
+        <img
+          className={styles.imageLink}
+          src="/cart-icon.png"
+          alt="cart icon"
+        />
+        <p>{cart.length}</p>
+      </Link>
     </div>
   );
 }

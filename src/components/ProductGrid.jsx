@@ -12,7 +12,7 @@ const products = [
     price: 123.99,
   },
   {
-    _id: 1,
+    _id: 2,
     img: "/gaming-chair.png",
     name: "Gaming Chair High Black Racing Computer Chair PU",
     category: "Category",
@@ -21,7 +21,7 @@ const products = [
     price: 123.99,
   },
   {
-    _id: 1,
+    _id: 3,
     img: "/gaming-chair.png",
     name: "Gaming Chair High Black Racing Computer Chair PU",
     category: "Category",
@@ -30,7 +30,7 @@ const products = [
     price: 123.99,
   },
   {
-    _id: 1,
+    _id: 4,
     img: "/gaming-chair.png",
     name: "Gaming Chair High Black Racing Computer Chair PU",
     category: "Category",
@@ -39,7 +39,7 @@ const products = [
     price: 123.99,
   },
   {
-    _id: 1,
+    _id: 5,
     img: "/gaming-chair.png",
     name: "Gaming Chair High Black Racing Computer Chair PU",
     category: "Category",
@@ -50,14 +50,12 @@ const products = [
 ];
 
 export default function ProductGrid({ children, style }) {
-  // const products = Array.from(Array(number).keys());
-
   return (
     <div className={styles.productGrid} style={style}>
       {children}
       <div className={styles.products}>
         {products.slice(0, 10).map((product) => (
-          <Product key={product.id} product={product} />
+          <Product key={product._id} product={product} />
         ))}
       </div>
     </div>
