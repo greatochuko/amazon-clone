@@ -9,6 +9,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
+:root {
+  --main-color: #6f5950;
+  --main-color-light: #e7c69e;
+}
+
 button {
   cursor: pointer;
 }

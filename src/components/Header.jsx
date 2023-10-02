@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <div className={styles.header}>
       <Link to="/">
-        <img className={styles.logo} src="/amazon-logo.png" alt="Amazon logo" />
+        <img className={styles.logo} src="/logo.png" alt="Digimall logo" />
       </Link>
       <ul>
         <li>
@@ -41,7 +41,7 @@ export default function Header() {
       <form onSubmit={handleSearch}>
         <input
           type="text"
-          placeholder="Search Amazon"
+          placeholder="Search DigiMall"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />

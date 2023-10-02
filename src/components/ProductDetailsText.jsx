@@ -3,11 +3,19 @@ import styles from "./ProductDetailsText.module.css";
 import ProductInfo from "./ProductInfo";
 import ProductReviews from "./ProductReviews";
 import ProductFaqs from "./ProductFaqs";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, removeFromCart } from "../redux/slice/cartSlice";
+import { useParams } from "react-router-dom";
 
 export default function ProductDetailsText() {
+  const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
   const [activeTab, setActiveTab] = useState("info");
   const [quantity, setQuantity] = useState(1);
   const [liked, setLiked] = useState(false);
+
+  const { id: productId } = useParams();
+  const productInCart = cart.includes(Number(productId));
 
   const disableDecQuantity = quantity <= 0;
 
@@ -47,7 +55,16 @@ export default function ProductDetailsText() {
       {activeTab === "reviews" && <ProductReviews />}
       {activeTab === "faq" && <ProductFaqs />}
       <div className={styles.actions}>
-        <button className={styles.addToCartBtn}>Add to Cart</button>
+        <button
+          className={styles.addToCartBtn}
+          onClick={
+            productInCart
+              ? () => dispatch(removeFromCart(productId))
+              : () => dispatch(addToCart(productId))
+          }
+        >
+          {productInCart ? "Remove from Cart" : "Add to Cart"}
+        </button>
         <div className={styles.quantity}>
           <button onClick={handleDecQuantity} disabled={disableDecQuantity}>
             -
