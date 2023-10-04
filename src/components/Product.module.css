@@ -13,10 +13,14 @@
 }
 
 .productImage {
-  width: 100%;
-  object-fit: cover;
-  transition: transform 0.3s;
+  height: 55%;
   padding: 1rem;
+}
+
+.productImage img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
 .productDetails {
@@ -40,7 +44,7 @@
 }
 
 .price {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #333;
   display: flex;
@@ -79,17 +83,25 @@
   bottom: 10px;
   right: 10px;
   padding: 6px 10px;
-  color: #fff;
-  border-radius: 5px;
+  border-radius: 9999px;
   background-color: transparent;
-  border: none;
   display: none;
-  background-color: #ff9900;
-  font-size: 0.8rem;
+  color: #457eac;
+  border: solid 1px #457eac;
+  background-color: #fff;
+  font-size: 0.7rem;
+  transition: 0.15s;
+  transition-property: color, background-color;
+}
+
+.removeFromCartBtn {
+  background-color: #457eac;
+  color: #fff;
 }
 
 .addToCartBtn:hover {
-  background-color: hsl(36, 100%, 47%);
+  color: #fff;
+  background-color: #457eac;
 }
 
 .product:hover :is(.addToCartBtn, .likeBtn) {

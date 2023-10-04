@@ -1,62 +1,38 @@
+import { useEffect, useState } from "react";
 import Product from "./Product";
 import styles from "./ProductGrid.module.css";
+import SectionHeader from "./SectionHeader";
+import ProductWireframe from "./ProductWireframe";
 
-const products = [
-  {
-    _id: 1,
-    img: "/gaming-chair.png",
-    name: "Gaming Chair High Black Racing Computer Chair PU",
-    category: "Category",
-    rating: 4,
-    reviews: 1254,
-    price: 123.99,
-  },
-  {
-    _id: 2,
-    img: "/gaming-chair.png",
-    name: "Gaming Chair High Black Racing Computer Chair PU",
-    category: "Category",
-    rating: 4,
-    reviews: 1254,
-    price: 123.99,
-  },
-  {
-    _id: 3,
-    img: "/gaming-chair.png",
-    name: "Gaming Chair High Black Racing Computer Chair PU",
-    category: "Category",
-    rating: 4,
-    reviews: 1254,
-    price: 123.99,
-  },
-  {
-    _id: 4,
-    img: "/gaming-chair.png",
-    name: "Gaming Chair High Black Racing Computer Chair PU",
-    category: "Category",
-    rating: 4,
-    reviews: 1254,
-    price: 123.99,
-  },
-  {
-    _id: 5,
-    img: "/gaming-chair.png",
-    name: "Gaming Chair High Black Racing Computer Chair PU",
-    category: "Category",
-    rating: 4,
-    reviews: 1254,
-    price: 123.99,
-  },
-];
+export default function ProductGrid({ children, style, category }) {
+  const [products, setProducts] = useState([]);
 
-export default function ProductGrid({ children, style }) {
+  const isLoading = !products.length;
+  // console.log(products);
+  useEffect(() => {
+    async function getProducts() {
+      const res = await fetch("http://localhost:3000/products");
+      const data = await res.json();
+      setProducts(data.filter((p) => p.category === category).slice(0, 5));
+      // setProducts(data);
+    }
+    getProducts();
+  }, [category]);
+
   return (
     <div className={styles.productGrid} style={style}>
-      {children}
+      <SectionHeader title="Shop Headphones" link="See More" />
       <div className={styles.products}>
-        {products.slice(0, 10).map((product) => (
-          <Product key={product._id} product={product} />
-        ))}
+        {isLoading ? (
+          <>
+            <ProductWireframe /> <ProductWireframe /> <ProductWireframe />
+            <ProductWireframe /> <ProductWireframe />
+          </>
+        ) : (
+          products
+            .slice(0, 10)
+            .map((product) => <Product key={product._id} product={product} />)
+        )}
       </div>
     </div>
   );

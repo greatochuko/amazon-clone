@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader";
 export default function Categories() {
   return (
     <section className={styles.categories}>
-      <SectionHeader title="Shop By Categories" link="See all Categories" />
+      <SectionHeader title="Popular Categories" link="See all Categories" />
       <div className={styles.categoriesContianer}>
         <Link className={styles.category}>
           <img

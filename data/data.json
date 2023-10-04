@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "_id": 1,
+      "name": "Gaming Chair High Black Racing Computer Chair PU",
+      "price": 129.99,
+      "img": "/gaming-chair.png",
+      "rating": 4,
+      "reviews": 1243,
+      "category": "gaming accessories"
+    },
+    {
+      "_id": 2,
+      "name": "Gaming Chair High Black Racing Computer Chair PU",
+      "price": 129.99,
+      "img": "/gaming-chair.png",
+      "rating": 4,
+      "reviews": 1243,
+      "category": "gaming accessories"
+    },
+    {
+      "_id": 3,
+      "name": "Gaming Chair High Black Racing Computer Chair PU",
+      "price": 129.99,
+      "img": "/gaming-chair.png",
+      "rating": 4,
+      "reviews": 1243,
+      "category": "gaming accessories"
+    },
+    {
+      "_id": 4,
+      "name": "Gaming Chair High Black Racing Computer Chair PU",
+      "price": 129.99,
+      "img": "/gaming-chair.png",
+      "rating": 4,
+      "reviews": 1243,
+      "category": "gaming accessories"
+    },
+    {
+      "_id": 5,
+      "name": "Gaming Chair High Black Racing Computer Chair PU",
+      "price": 129.99,
+      "img": "/gaming-chair.png",
+      "rating": 4,
+      "reviews": 1243,
+      "category": "gaming accessories"
+    },
+    {
+      "_id": 6,
+      "name": "Apple AirPods Max Wireless Over-Ear Headphones. Active Noise Cancelling, Transparency Mode, Spatial Audio, Digital Crown for Volume Control. Bluetooth Headphones for iPhone - Silver",
+      "price": 426.4,
+      "img": "/airpods-max.png",
+      "rating": 5,
+      "reviews": 132,
+      "category": "headphones"
+    },
+    {
+      "_id": 7,
+      "name": "Apple AirPods Max Wireless Over-Ear Headphones. Active Noise Cancelling, Transparency Mode, Spatial Audio, Digital Crown for Volume Control. Bluetooth Headphones for iPhone - Silver",
+      "price": 426.4,
+      "img": "/airpods-max.png",
+      "rating": 5,
+      "reviews": 132,
+      "category": "headphones"
+    },
+    {
+      "_id": 8,
+      "name": "Apple AirPods Max Wireless Over-Ear Headphones. Active Noise Cancelling, Transparency Mode, Spatial Audio, Digital Crown for Volume Control. Bluetooth Headphones for iPhone - Silver",
+      "price": 426.4,
+      "img": "/airpods-max.png",
+      "rating": 5,
+      "reviews": 132,
+      "category": "headphones"
+    },
+    {
+      "_id": 9,
+      "name": "Apple AirPods Max Wireless Over-Ear Headphones. Active Noise Cancelling, Transparency Mode, Spatial Audio, Digital Crown for Volume Control. Bluetooth Headphones for iPhone - Silver",
+      "price": 426.4,
+      "img": "/airpods-max.png",
+      "rating": 5,
+      "reviews": 132,
+      "category": "headphones"
+    },
+    {
+      "_id": 10,
+      "name": "Apple AirPods Max Wireless Over-Ear Headphones. Active Noise Cancelling, Transparency Mode, Spatial Audio, Digital Crown for Volume Control. Bluetooth Headphones for iPhone - Silver",
+      "price": 426.4,
+      "img": "/airpods-max.png",
+      "rating": 5,
+      "reviews": 132,
+      "category": "headphones"
+    }
+  ]
+}

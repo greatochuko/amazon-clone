@@ -1,11 +1,13 @@
 .rating {
   display: flex;
   align-items: center;
-  gap: 10px;
+
+  gap: 5px;
 }
 
 .stars {
   display: flex;
+  margin-top: 1px;
 }
 
 .stars img {

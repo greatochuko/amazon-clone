@@ -7,7 +7,7 @@
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: fit-content;
+  grid-auto-rows: 380px;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;

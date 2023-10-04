@@ -13,7 +13,7 @@ export default function Rating({ rating = 5, maxRating = 5, reviews, style }) {
           )
         )}
       </div>
-      {reviews && <div className={styles.reviews}>1254 Reviews</div>}
+      {reviews && <div className={styles.reviews}>({reviews})</div>}
     </div>
   );
 }

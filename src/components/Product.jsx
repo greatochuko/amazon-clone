@@ -14,7 +14,6 @@ export default function Product({ product }) {
   }
 
   const cart = useSelector((state) => state.cart);
-  // const cart = []
 
   const dispatch = useDispatch();
 
@@ -31,14 +30,12 @@ export default function Product({ product }) {
 
   return (
     <Link to={`/product/${product._id}`} className={styles.product}>
-      <img
-        src={product.img}
-        alt={product.name}
-        className={styles.productImage}
-      />
+      <div className={styles.productImage}>
+        <img src={product.img} alt={product.name} />
+      </div>
       <div className={styles.productDetails}>
         <p className={styles.productCategory}>{product.category}</p>
-        <h4 className={styles.productName}>{product.name}</h4>
+        <h4 className={styles.productName}>{product.name.substr(0, 40)}...</h4>
         <Rating rating={5} reviews={1254} />
         <p className={styles.price}>
           $129<span>99</span>
@@ -51,7 +48,11 @@ export default function Product({ product }) {
         />
       </button>
       <button
-        className={styles.addToCartBtn}
+        className={
+          cart.includes(product._id)
+            ? styles.addToCartBtn + " " + styles.removeFromCartBtn
+            : styles.addToCartBtn
+        }
         onClick={
           cart.includes(product._id) ? handleRemoveFromCart : handleAddToCart
         }
